@@ -11,6 +11,7 @@ use version;
 
 # Use Statements
 use parent qw(CGI::Ex::App);
+use Carp;
 use CGI::Ex::Dump qw(debug);
 use FindBin;
 

@@ -10,6 +10,7 @@ use diagnostics;
 use version;
 
 # Use Statements
+use Carp;
 use Data::Dumper;
 use FindBin;
 
