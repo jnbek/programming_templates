@@ -10,7 +10,7 @@ use diagnostics;
 use version;
 
 # Use Statements
-use base qw(CGI::Ex::App);
+use parent qw(CGI::Ex::App);
 use CGI::Ex::Dump qw(debug);
 use FindBin;
 
