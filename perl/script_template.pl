@@ -6,7 +6,7 @@
 
 use strict;
 use warnings;
-use diagnostics; 
+#use diagnostics; #Uncomment for verbose warnings;
 use version;
 
 # Use Statements
