@@ -19,8 +19,12 @@ our $VERSION = qv(0.1);
 our $base_path = $FindBin::RealBin;
 
 sub new {
-    my $class = shift;
-    my $args  = shift || {};
+    my $proto = shift;
+    my $class = ref($proto) || $proto;
+    if ( ref $_[0] ne "HASH" && scalar @_ % 2 ) {
+        return ["Invalid Input", @_];
+    }
+    my $args = ref $_[0] eq "HASH" ? shift : {@_};
     # Do stuff with $args
     return bless $args, $class;
 }
